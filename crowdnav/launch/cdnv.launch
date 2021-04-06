@@ -45,7 +45,7 @@
       <remap from="/robot_0/cmd_vel" to="/foo"/>
     </node>
 
-    <node pkg="crowdnav" type="crowdnav_node.py" name="crowdnav" output="screen">   
+    <node pkg="crowdnav" type="crowdnav_node.py" name="crowdnav" output="screen" launch-prefix="bash -c 'sleep 10; $0 $@' ">   
     </node>
   </group>
 
