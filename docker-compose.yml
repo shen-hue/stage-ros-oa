@@ -1,7 +1,7 @@
 version: '3'
 services:
   ros:
-    image: llalal/stageros-melodic:teb
+    image: llalal/stageros-melodic:v1
     volumes:
     - .:/root/catkin_stage/src/stage-ros-oa
     command: tail -f /dev/null
